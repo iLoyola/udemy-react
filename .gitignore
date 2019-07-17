@@ -1,4 +1,4 @@
-npm_modules/
+node_modules/
 bower_components
 trash
 Error.log
@@ -9,3 +9,8 @@ Error.log
 .trashes
 
 yarn-error.log
+
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
