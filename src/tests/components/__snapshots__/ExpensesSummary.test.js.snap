@@ -10,6 +10,12 @@ exports[`Should correctly render Expenses Summary with 1 expense 1`] = `
      totalling 
     $2.35
   </h1>
+  <Link
+    replace={false}
+    to="/create"
+  >
+    Add expense
+  </Link>
 </div>
 `;
 
@@ -23,5 +29,11 @@ exports[`Should correctly render Expenses Summary with multipule expenses 1`] = 
      totalling 
     $324,234.32
   </h1>
+  <Link
+    replace={false}
+    to="/create"
+  >
+    Add expense
+  </Link>
 </div>
 `;

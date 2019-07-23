@@ -8,6 +8,7 @@ import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
 import getVisibleExpenses from './selectors/expenses';
 import { firebase } from './firebase/firebase';
+import LoadingPage from './pages/LoadingPage';
 
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
@@ -43,7 +44,7 @@ const renderApp = () => {
 	}
 };
 
-ReactDOM.render( <p>Loading...</p>, document.getElementById( "app" ) );
+ReactDOM.render( <LoadingPage />, document.getElementById( "app" ) );
 
 
 {/* Bootstrapping the application across multiple files */}
