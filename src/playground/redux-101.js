@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 
+// Action Generators - functions that return action objects
 const incrementCount = ( { incrementBy = 1 } = {} ) => ({
 	type: 'INCREMENT',
 	incrementBy
@@ -22,7 +23,6 @@ const resetCount = () => ({
 // Reducers
 // 1. Reducers are pure functions
 // 2. Never change state or action
-
 const countReducer = ( state = { count: 0 }, action ) => {
 	switch( action.type ) {
 		case 'INCREMENT':
@@ -65,6 +65,8 @@ store.dispatch( incrementCount( {incrementBy: 5} ) );
 // 	type: 'INCREMENT'
 // });
 store.dispatch( incrementCount() );
+
+// unsubscribe()
 
 // store.dispatch({
 // 	type: 'RESET'
